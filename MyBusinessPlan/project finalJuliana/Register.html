@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/myCss.css">
+
+</head>
+
+<body style="background-image: url('./css/img/stefan-stefancik-257625 copy.jpg');">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="navbar-logo" src="./css/img/logoMyBusinessPlan.png" href="./index.html">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Services.html">Services</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link disabled" href="./MyChecklist.html">MyChecklist</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+
+                <a href="login.html" class="btn btn-outline-success my-2 my-sm-0" id="loginButon" onclick="window.location = 'LogIn.html';">LogIn</a>
+                <button class="btn btn-outline-denial disabled my-2 my-sm-0" type="loginOut" id="logoutbuton">LogOut</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style="padding-top:15%;">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-6" style="background-color:rgba(92, 146, 21, 0.7);border-radius: 10px; ">
+                    <div class="content" style="padding: 70px 50px 25px 50px;">
+                        <h3> We are happy to offer you a plattform to keep track of your business needs and assitance on your journey of becoming an enterperneur !!</h3>
+                        <br>
+                        <h3> We invite you to create a new account with us !!</h3>
+                    </div>
+                </div>
+                <div class="col-sm-6" style="background-color:rgba(66, 45, 114, 0.7);border-radius: 10px; ">
+                    <div class="content" style="padding: 25px 50px 25px 50px;">
+                        <div class="form-group">
+                            <label>FirstName</label><br />
+                            <input id="FirstName" name="FirstName" type="text"><br />
+                            <label>LastName</label> <br />
+                            <input id="LastName" name="LastName" type="text"><br />
+                            <label>UserName</label> <br />
+                            <input id="UserName" name="UserName" type="text"><br />
+                            <label>Email</label> <br />
+                            <input id="Email" name="Email" type="email"><br />
+                            <label>Password</label><br />
+                            <input id="Password" name="Password" type="password"><br />
+                            <br/>
+                            <button class="btn btn-outline-secondary my-2 my-sm-0" type="clear" id="clearbtn">Clear</button>
+                            <input class="btn btn-outline-success my-2 my-sm-0" id="registerbutton" name="registerbutton" type="button" value="Register" onclick="register();">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="./JS/myJs.js"></script>
+    <script>
+        $("#clearbtn").click(function() {
+
+            $("#FirstName").val("");
+            $("#LastName").val("");
+            $("#UserName").val("");
+            $("#Email").val("");
+            $("#Password").val("");
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body {
+    color: white;
+    background-image: url("./img/stefan-stefancik-257625.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html {
+    height: 100%;
+    width: 100%
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 4em;
+    text-shadow: 2px 2px black;
+}
+
+h5 {
+    color: black;
+    text-shadow: 2px 2px grey;
+}

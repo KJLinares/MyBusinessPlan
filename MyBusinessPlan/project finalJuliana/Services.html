@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/myCss.css">
+    <style>
+        .containerme {
+            position: relative;
+            width: 100%;
+        }
+        
+        .imageme {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 100%;
+            right: 0;
+            background-color: rgba(19, 61, 139, 0.616);
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+        
+        .containerme:hover .overlay {
+            width: 100%;
+            left: 0;
+        }
+        
+        .text {
+            color: white;
+            font-weight: 400;
+            font-size: 2em;
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body style="background-image: url('./css/img/stefan-stefancik-257625 copy.jpg');">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="navbar-logo" src="./css/img/logoMyBusinessPlan.png" href="./index.html">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Services.html">Services</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link " href="./MyChecklist.html">MyChecklist</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+
+                <a href="index.html" class="btn btn-outline-success my-2 my-sm-0 " type="login" id="loginButon">LogIn</a>
+                <button class="btn btn-outline-denial my-2 my-sm-0" type="loginOut" id="logoutbuton">LogOut</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style="padding-top:5%;">
+        <div class="jumbotron" style="background-color:rgb(105, 105, 105);">
+            <h1>Top needs for your business</h1>
+            <h5>Click to find out more </h5>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="./serv1.html">
+                        <div class="img-thumbnail">
+                            <div class="containerme">
+                                <img src="./css/img/davide-cantelli-144214.jpg" alt="1.Branding solutions" class="imageme">
+                                <div class="overlay">
+                                    <div class="text">Branding solutions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <br>
+                    <a href="./serv3.html">
+                        <div class="img-thumbnail">
+                            <div class="containerme">
+                                <img src="./css/img/hunters-race-408744.jpg" alt="3.Value proposition:" class="imageme">
+                                <div class="overlay">
+                                    <div class="text">Value proposition</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-8" style="padding-top:3%;">
+                    <a href="./serv2.html">
+                        <div class="img-thumbnail">
+                            <div class="containerme">
+                                <img src="./css/img/andrew-pons-6488.jpg" alt="2.Business plan" class="imageme">
+                                <div class="overlay">
+                                    <div class="text">Business plan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-4" style="padding-top:2%;">
+                    <a href="./serv4.html">
+                        <div class="img-thumbnail">
+                            <div class="containerme">
+                                <img src="./css/img/steve-halama-124103.jpg" alt="4.Marketing Design" class="imageme" style="height: 100%;">
+                                <div class="overlay">
+                                    <div class="text">Marketing Design</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-1">
+                </div>
+                <div class="col-lg-4">
+                    <a href="./serv5.html">
+                        <div class="img-thumbnail">
+                            <div class="containerme">
+                                <img src="./css/img/nonki-azariah-454001.jpg" alt="5.Growth management" class="imageme">
+                                <div class="overlay">
+                                    <div class="text">Growth management</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="./JS/myJs.js"></script>
+
+</body>
+
+</html>
